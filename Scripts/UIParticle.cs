@@ -30,6 +30,8 @@ namespace Coffee.UIExtensions
             Reprica,
         }
 
+        public float Scale => this.scale;
+
         [HideInInspector][SerializeField] internal bool m_IsTrail = false;
 
         [Tooltip("Particle effect scale")]
@@ -116,7 +118,8 @@ namespace Coffee.UIExtensions
                 ResetGroupId();
             }
         }
-
+        
+        
         /// <summary>
         /// Absolute particle position mode.
         /// The particles will be emitted at the ParticleSystem position.
@@ -312,11 +315,12 @@ namespace Coffee.UIExtensions
             //{
             //    newScale = transform.parent.lossyScale.Inverse();
             //}
-            var newScale = transform.parent.lossyScale.Inverse();
-            if (transform.localScale != newScale)
-            {
-                transform.localScale = newScale;
-            }
+            // var newScale = transform.parent.lossyScale.Inverse();
+            // if (transform.localScale != newScale)
+            // {
+            //     transform.localScale = newScale;
+            // }
+            scale3D = transform.localScale;
         }
 
         internal void UpdateRenderers()
