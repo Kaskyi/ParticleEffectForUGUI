@@ -22,7 +22,8 @@ Steps to be performed to submit a pull request:
 1. Fork the repository and create your branch from `develop`.
 2. If you have fixed a bug or added code that should be tested, add tests.
 3. Click `Window > Generals > Test Runner` to test
-4. Commit with a massage based on [Angular Commit Message Conventions](https://gist.github.com/stephenparish/9941e89d80e2bc58a153).
+4. Commit with a massage based
+   on [Angular Commit Message Conventions](https://gist.github.com/stephenparish/9941e89d80e2bc58a153).
 5. Fill out the description, link any related issues and submit your pull request.
 
 #### License
