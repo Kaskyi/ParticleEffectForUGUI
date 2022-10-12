@@ -2,7 +2,7 @@ using UnityEditor;
 using UnityEngine;
 using UnityEngine.UI;
 
-namespace Coffee.UIExtensions
+namespace Razomy.Unity.UIParticles.Scripts.Editor
 {
   internal class UIParticleMenu
   {

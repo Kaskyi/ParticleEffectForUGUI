@@ -4,7 +4,7 @@ using System.Text;
 using UnityEditor;
 using UnityEngine;
 
-namespace Coffee.UIExtensions
+namespace Razomy.Unity.UIParticles.Scripts.Editor
 {
   internal class AnimatedPropertiesEditor
   {

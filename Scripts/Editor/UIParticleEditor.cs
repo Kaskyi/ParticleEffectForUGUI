@@ -5,6 +5,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEditor;
+using UnityEditor.Overlays;
 using UnityEditor.SceneManagement;
 using UnityEditor.UI;
 using UnityEditorInternal;
@@ -12,13 +13,12 @@ using UnityEngine;
 using UnityEngine.UI;
 using Object = UnityEngine.Object;
 #if UNITY_2021_2_OR_NEWER
-using UnityEditor.Overlays;
 
 #else
 using System.Reflection;
 #endif
 
-namespace Coffee.UIExtensions
+namespace Razomy.Unity.UIParticles.Scripts.Editor
 {
   [CustomEditor(typeof(UIParticle))]
   [CanEditMultipleObjects]

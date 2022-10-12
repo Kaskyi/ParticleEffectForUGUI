@@ -4,7 +4,7 @@ using System.Reflection;
 using UnityEngine;
 using Object = UnityEngine.Object;
 
-namespace Coffee.UIParticleExtensions
+namespace Razomy.Unity.UIParticles.Scripts
 {
   public static class Vector3Extensions
   {

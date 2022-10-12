@@ -1,12 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
-using Coffee.UIParticleExtensions;
 using UnityEngine;
 using UnityEngine.Profiling;
 using UnityEngine.Rendering;
 using UnityEngine.UI;
 
-namespace Coffee.UIExtensions
+namespace Razomy.Unity.UIParticles.Scripts
 {
   [ExecuteAlways]
   [RequireComponent(typeof(RectTransform))]

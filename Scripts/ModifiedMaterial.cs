@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using UnityEngine;
 
-namespace Coffee.UIParticleExtensions
+namespace Razomy.Unity.UIParticles.Scripts
 {
   internal class ModifiedMaterial
   {

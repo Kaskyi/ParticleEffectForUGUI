@@ -1,9 +1,8 @@
 ﻿using System;
-using Coffee.UIParticleExtensions;
 using UnityEngine;
 using UnityEngine.Events;
 
-namespace Coffee.UIExtensions
+namespace Razomy.Unity.UIParticles.Scripts
 {
   [ExecuteAlways]
   public class UIParticleAttractor : MonoBehaviour

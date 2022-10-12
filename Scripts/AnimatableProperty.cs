@@ -1,7 +1,7 @@
 ﻿using System;
 using UnityEngine;
 
-namespace Coffee.UIExtensions
+namespace Razomy.Unity.UIParticles.Scripts
 {
   [Serializable]
   public class AnimatableProperty : ISerializationCallbackReceiver

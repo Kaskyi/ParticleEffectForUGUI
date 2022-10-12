@@ -4,14 +4,13 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Runtime.CompilerServices;
-using Coffee.UIParticleExtensions;
 using UnityEngine;
 using UnityEngine.Rendering;
 using UnityEngine.UI;
 
 [assembly: InternalsVisibleTo("Coffee.UIParticle.Editor")]
 
-namespace Coffee.UIExtensions
+namespace Razomy.Unity.UIParticles.Scripts
 {
     /// <summary>
     ///   Render maskable and sortable particle effect ,without Camera, RenderTexture or Canvas.

@@ -2,7 +2,7 @@ using System.Collections.Generic;
 using UnityEditor;
 using UnityEngine;
 
-namespace Coffee.UIExtensions
+namespace Razomy.Unity.UIParticles.Scripts
 {
   internal static class UIParticleUpdater
   {
