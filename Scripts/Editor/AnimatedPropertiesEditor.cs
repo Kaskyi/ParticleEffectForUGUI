@@ -33,7 +33,7 @@ namespace Razomy.Unity.UIParticles.Scripts.Editor
       }
       else
       {
-        result.Aggregate(s_Sb, (a, b) => s_Sb.AppendFormat("{0}, ", b));
+        result.Aggregate(s_Sb, (_, b) => s_Sb.AppendFormat("{0}, ", b));
         s_Sb.Length -= 2;
       }
 

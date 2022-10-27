@@ -12,10 +12,10 @@ using UnityEngine.UI;
 
 namespace Razomy.Unity.UIParticles.Scripts
 {
-    /// <summary>
-    ///   Render maskable and sortable particle effect ,without Camera, RenderTexture or Canvas.
-    /// </summary>
-    [ExecuteAlways]
+  /// <summary>
+  ///   Render maskable and sortable particle effect ,without Camera, RenderTexture or Canvas.
+  /// </summary>
+  [ExecuteAlways]
   [RequireComponent(typeof(RectTransform))]
   [RequireComponent(typeof(CanvasRenderer))]
   public class UIParticle : MaskableGraphic

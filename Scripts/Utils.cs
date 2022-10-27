@@ -109,7 +109,6 @@ namespace Razomy.Unity.UIParticles.Scripts
     {
       self.Sort((a, b) =>
       {
-        var tr = transform;
         var aRenderer = a.GetComponent<ParticleSystemRenderer>();
         var bRenderer = b.GetComponent<ParticleSystemRenderer>();
 
@@ -138,8 +137,8 @@ namespace Razomy.Unity.UIParticles.Scripts
         // Z position & sortingFudge: descending
         var aTransform = a.transform;
         var bTransform = b.transform;
-        var aPos = tr.InverseTransformPoint(aTransform.position).z + aRenderer.sortingFudge;
-        var bPos = tr.InverseTransformPoint(bTransform.position).z + bRenderer.sortingFudge;
+        var aPos = transform.InverseTransformPoint(aTransform.position).z + aRenderer.sortingFudge;
+        var bPos = transform.InverseTransformPoint(bTransform.position).z + bRenderer.sortingFudge;
         if (!Mathf.Approximately(aPos, bPos))
           return (int)Mathf.Sign(bPos - aPos);
 
