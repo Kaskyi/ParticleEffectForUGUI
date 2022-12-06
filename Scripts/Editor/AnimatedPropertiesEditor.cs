@@ -53,11 +53,13 @@ namespace Razomy.Unity.UIParticles.Scripts.Editor
       if (!isClicked) return;
 
       var gm = new GenericMenu();
-      gm.AddItem(new GUIContent("Nothing"), s_ActiveNames.Count == 0, () =>
-      {
-        sp.ClearArray();
-        sp.serializedObject.ApplyModifiedProperties();
-      });
+      gm.AddItem(new GUIContent("Nothing"),
+        s_ActiveNames.Count == 0,
+        () =>
+        {
+          sp.ClearArray();
+          sp.serializedObject.ApplyModifiedProperties();
+        });
 
 
       if (!sp.hasMultipleDifferentValues)
@@ -86,15 +88,21 @@ namespace Razomy.Unity.UIParticles.Scripts.Editor
 
           if (type != AnimatableProperty.ShaderPropertyType.Texture) continue;
 
-          AddMenu(gm, sp,
+          AddMenu(gm,
+            sp,
             new AnimatedPropertiesEditor
-              { _name = pName + "_ST", _type = AnimatableProperty.ShaderPropertyType.Vector }, true);
-          AddMenu(gm, sp,
+              { _name = pName + "_ST", _type = AnimatableProperty.ShaderPropertyType.Vector },
+            true);
+          AddMenu(gm,
+            sp,
             new AnimatedPropertiesEditor
-              { _name = pName + "_HDR", _type = AnimatableProperty.ShaderPropertyType.Vector }, true);
-          AddMenu(gm, sp,
+              { _name = pName + "_HDR", _type = AnimatableProperty.ShaderPropertyType.Vector },
+            true);
+          AddMenu(gm,
+            sp,
             new AnimatedPropertiesEditor
-              { _name = pName + "_TexelSize", _type = AnimatableProperty.ShaderPropertyType.Vector }, true);
+              { _name = pName + "_TexelSize", _type = AnimatableProperty.ShaderPropertyType.Vector },
+            true);
         }
       }
 
@@ -106,7 +114,8 @@ namespace Razomy.Unity.UIParticles.Scripts.Editor
       if (add && s_ActiveNames.Contains(property._name)) return;
 
       menu.AddItem(new GUIContent(string.Format("{0} ({1})", property._name, property._type)),
-        s_ActiveNames.Contains(property._name), () =>
+        s_ActiveNames.Contains(property._name),
+        () =>
         {
           var index = s_ActiveNames.IndexOf(property._name);
           if (0 <= index)

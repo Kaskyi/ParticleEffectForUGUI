@@ -282,8 +282,10 @@ namespace Razomy.Unity.UIParticles.Scripts.Editor
             if (mat.HasProperty(propName)) continue;
 
             EditorGUILayout.HelpBox(
-              string.Format("Shader '{0}' doesn't have '{1}' property. This graphic cannot be masked.", shader.name,
-                propName), MessageType.Warning);
+              string.Format("Shader '{0}' doesn't have '{1}' property. This graphic cannot be masked.",
+                shader.name,
+                propName),
+              MessageType.Warning);
             break;
           }
         }
@@ -324,7 +326,8 @@ namespace Razomy.Unity.UIParticles.Scripts.Editor
             EditorGUILayout.HelpBox(
               string.Format(
                 "ParticleSystem '{0}' uses 'TEXCOORD*.zw' components as custom vertex stream.\nUIParticle does not support it (See README.md).",
-                psr.name), MessageType.Warning);
+                psr.name),
+              MessageType.Warning);
         }
       }
     }
@@ -414,7 +417,9 @@ namespace Razomy.Unity.UIParticles.Scripts.Editor
       else if (spMeshSharing.intValue == 1 || spMeshSharing.intValue == 4)
       {
         EditorGUI.BeginDisabledGroup(true);
-        EditorGUILayout.ObjectField("Primary", UIParticleUpdater.GetPrimary(spGroupId.intValue), typeof(UIParticle),
+        EditorGUILayout.ObjectField("Primary",
+          UIParticleUpdater.GetPrimary(spGroupId.intValue),
+          typeof(UIParticle),
           false);
         EditorGUI.EndDisabledGroup();
       }
