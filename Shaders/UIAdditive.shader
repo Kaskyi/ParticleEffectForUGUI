@@ -1,4 +1,4 @@
-﻿Shader "UI/Additive"
+Shader "UI/Additive"
 {
     Properties
     {

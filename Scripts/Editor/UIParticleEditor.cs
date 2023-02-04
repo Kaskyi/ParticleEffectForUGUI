@@ -27,8 +27,14 @@ namespace Razomy.Unity.UIParticles.Scripts.Editor
   {
 #if UNITY_2021_2_OR_NEWER
 #if UNITY_2022_1_OR_NEWER
-        [Overlay(typeof(SceneView), "Scene View/UI Particles", "UI Particles", true, defaultDockPosition =
- DockPosition.Bottom, defaultDockZone = DockZone.Floating, defaultLayout = Layout.Panel)]
+    [Overlay(typeof(SceneView),
+      "Scene View/UI Particles",
+      "UI Particles",
+      true,
+      defaultDockPosition =
+        DockPosition.Bottom,
+      defaultDockZone = DockZone.Floating,
+      defaultLayout = Layout.Panel)]
 #else
     [Overlay(typeof(SceneView), "Scene View/UI Particles", "UI Particles", true)]
 #endif
@@ -161,7 +167,7 @@ namespace Razomy.Unity.UIParticles.Scripts.Editor
       _ro = new ReorderableList(sp.serializedObject, sp, true, true, true, true);
       _ro.elementHeight = EditorGUIUtility.singleLineHeight * 3 + 4;
       _ro.elementHeightCallback = _ => 3 * (EditorGUIUtility.singleLineHeight + 2);
-      _ro.drawElementCallback = (rect, index, _, __) =>
+      _ro.drawElementCallback = (rect, index, _, _) =>
       {
         EditorGUI.BeginDisabledGroup(sp.hasMultipleDifferentValues);
         rect.y += 1;

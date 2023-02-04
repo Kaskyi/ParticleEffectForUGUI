@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Reflection;
 using UnityEngine;
@@ -37,10 +37,7 @@ namespace Razomy.Unity.UIParticles.Scripts
       return self;
     }
 
-    public static bool IsVisible(this Vector3 self)
-    {
-      return 0 < Mathf.Abs(self.x * self.y * self.z);
-    }
+    public static bool IsVisible(this Vector3 self) => 0 < Mathf.Abs(self.x * self.y * self.z);
   }
 
   internal static class SpriteExtensions
@@ -105,8 +102,7 @@ namespace Razomy.Unity.UIParticles.Scripts
       return space;
     }
 
-    public static void SortForRendering(this List<ParticleSystem> self, Transform transform, bool sortByMaterial)
-    {
+    public static void SortForRendering(this List<ParticleSystem> self, Transform transform, bool sortByMaterial) =>
       self.Sort((a, b) =>
       {
         var aRenderer = a.GetComponent<ParticleSystemRenderer>();
@@ -144,7 +140,6 @@ namespace Razomy.Unity.UIParticles.Scripts
 
         return (int)Mathf.Sign(GetIndex(self, a) - GetIndex(self, b));
       });
-    }
 
     private static int GetIndex(IList<ParticleSystem> list, Object ps)
     {

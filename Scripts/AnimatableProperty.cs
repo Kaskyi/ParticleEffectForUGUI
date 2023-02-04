@@ -1,5 +1,6 @@
-﻿using System;
+using System;
 using UnityEngine;
+
 
 namespace Razomy.Unity.UIParticles.Scripts
 {
@@ -25,10 +26,7 @@ namespace Razomy.Unity.UIParticles.Scripts
     {
     }
 
-    public void OnAfterDeserialize()
-    {
-      id = Shader.PropertyToID(m_Name);
-    }
+    public void OnAfterDeserialize() => id = Shader.PropertyToID(m_Name);
 
     public void UpdateMaterialProperties(Material material, MaterialPropertyBlock mpb)
     {

@@ -195,10 +195,7 @@ namespace Razomy.Unity.UIParticles.Scripts
       isPaused = true;
     }
 
-    public void Resume()
-    {
-      isPaused = false;
-    }
+    public void Resume() => isPaused = false;
 
     public void Stop()
     {
@@ -212,10 +209,7 @@ namespace Razomy.Unity.UIParticles.Scripts
       isPaused = true;
     }
 
-    public void SetParticleSystemInstance(GameObject instance)
-    {
-      SetParticleSystemInstance(instance, true);
-    }
+    public void SetParticleSystemInstance(GameObject instance) => SetParticleSystemInstance(instance, true);
 
     public void SetParticleSystemInstance(GameObject instance, bool destroyOldParticles)
     {
@@ -249,10 +243,7 @@ namespace Razomy.Unity.UIParticles.Scripts
       SetParticleSystemInstance(Instantiate(prefab.gameObject), true);
     }
 
-    public void RefreshParticles()
-    {
-      RefreshParticles(gameObject);
-    }
+    public void RefreshParticles() => RefreshParticles(gameObject);
 
     private void RefreshParticles(GameObject root)
     {
@@ -285,8 +276,7 @@ namespace Razomy.Unity.UIParticles.Scripts
       for (; j < m_Renderers.Count; j++) GetRenderer(j).Clear(j);
     }
 
-    internal void UpdateTransformScale()
-    {
+    internal void UpdateTransformScale() =>
       //var newScale = Vector3.one;
       //if (uiScaling)
       //{
@@ -298,7 +288,6 @@ namespace Razomy.Unity.UIParticles.Scripts
       //     transform.localScale = newScale;
       // }
       scale3D = transform.localScale;
-    }
 
     internal void UpdateRenderers()
     {

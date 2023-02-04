@@ -14,6 +14,7 @@ A clear and concise description of what the bug is.
 
 **To Reproduce**
 Steps to reproduce the behavior:
+
 1. Go to '...'
 2. Click on '....'
 3. Scroll down to '....'
@@ -26,10 +27,11 @@ A clear and concise description of what you expected to happen.
 If applicable, add screenshots to help explain your problem.
 
 **Environment (please complete the following information):**
- - Version [e.g. 1.0.0]
- - Platform: [e.g. Editor(Windows/Mac), Standalone(Windows/Mac), iOS, Android, WebGL]
- - Unity version: [e.g. 2018.2.8f1]
- - Build options: [e.g. IL2CPP, .Net 4.x, LWRP]
+
+- Version [e.g. 1.0.0]
+- Platform: [e.g. Editor(Windows/Mac), Standalone(Windows/Mac), iOS, Android, WebGL]
+- Unity version: [e.g. 2018.2.8f1]
+- Build options: [e.g. IL2CPP, .Net 4.x, LWRP]
 
 **Additional context**
 Add any other context about the problem here.
